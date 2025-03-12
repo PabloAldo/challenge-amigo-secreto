@@ -40,9 +40,11 @@ function sortearAmigo(){
         inicio();       
     } else{
         alert("No ha ingresado el nombre de ningun amigo.");
+        resultado.innerHTML = " ";
     }
 }
 
+//Inicio de pagina
 function inicio(){
     let lista = document.getElementById('listaAmigos');
     lista.innerHTML = " ";
