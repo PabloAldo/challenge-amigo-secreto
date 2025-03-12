@@ -9,8 +9,7 @@ function agregarAmigo() {
     if(nombreAmigo === ''){ //Valida si la entrada esta vacia
         alert("Por favor, inserte  un nombre.");
     } else{
-        amigos.push(nombreAmigo);//agrega el valor al array
-        console.log(amigos);
+        amigos.push(nombreAmigo);//agrega el valor al array        
         actualizaLista();          
     }
     document.getElementById('amigo').value = '';//limpia el campo de entrada
@@ -33,8 +32,7 @@ function sortearAmigo(){
         let numIndice = Math.floor(Math.random() * amigos.length);
         console.log(numIndice);        
         let resultado = document.getElementById('resultado');
-        let li = document.createElement("li");
-        console.log(resultado);
+        let li = document.createElement("li");        
         li.textContent = `El amigo secreto es ${amigos[numIndice]}`;
         resultado.appendChild(li);
         inicio();       
@@ -48,8 +46,7 @@ function sortearAmigo(){
 function inicio(){
     let lista = document.getElementById('listaAmigos');
     lista.innerHTML = " ";
-    amigos = []
-    console.log(amigos.length);
+    amigos = []    
 }
 
 
